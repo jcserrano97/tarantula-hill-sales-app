@@ -15,7 +15,8 @@
       "Bash(curl:*)",
       "Bash(git push:*)",
       "Bash(git remote add:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "WebFetch(domain:tarantula-hill-sales-putacmq20-joshuas-projects-8d2f46e8.vercel.app)"
     ],
     "deny": []
   }
