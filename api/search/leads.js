@@ -137,8 +137,10 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('Search error:', error);
     res.status(500).json({ 
+      success: false,
       message: 'Error searching for leads',
-      error: error.message 
+      error: error.message,
+      details: error.stack
     });
   }
 }

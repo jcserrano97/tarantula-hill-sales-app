@@ -25,8 +25,8 @@ function App() {
         setError('Search failed. Please try again.');
       }
     } catch (error) {
-      setError('Error searching for leads. Please check your connection and try again.');
-      console.error('Search error:', error);
+      console.error('Search error details:', error);
+      setError(`Error searching for leads: ${error.message}. Please check your connection and try again.`);
     } finally {
       setLoading(false);
     }
