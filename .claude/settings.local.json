@@ -11,7 +11,9 @@
       "Bash(node server.js)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(curl:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }
