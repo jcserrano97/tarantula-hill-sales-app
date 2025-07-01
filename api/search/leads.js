@@ -42,6 +42,12 @@ export default async function handler(req, res) {
       });
     }
 
+    if (!GOOGLE_PLACES_API_KEY) {
+      return res.status(500).json({ 
+        message: 'Google Places API key not configured' 
+      });
+    }
+
     // Convert venue types to Google Places types
     const googleTypes = venueTypes.flatMap(type => venueTypeMap[type] || []);
     
